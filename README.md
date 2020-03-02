@@ -49,3 +49,4 @@ The figure below illustrates this behavior using an example.
 <h2>Status 2020.03.02</h2>
 <p> We are currently working on task 2.2 <br>
 Also we would like to achieve the<strong> highest grade</strong> possible </p>
+<p> Creating new line in branch_c </p>
