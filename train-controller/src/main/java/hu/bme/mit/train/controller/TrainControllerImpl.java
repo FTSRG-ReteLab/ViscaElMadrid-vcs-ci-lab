@@ -9,6 +9,10 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 	private Thread t;
 
+	/**
+	 * @author szlnnn
+	 * adding comments to please the task
+	 */
 	public TrainControllerImpl() {
 		t = new Thread(() -> {
 			t.start();
