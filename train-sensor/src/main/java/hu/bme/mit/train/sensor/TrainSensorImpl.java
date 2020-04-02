@@ -8,8 +8,9 @@ public class TrainSensorImpl implements TrainSensor {
 
 	private TrainController controller;
 	private TrainUser user;
-	private int speedLimit = 5;
-
+	private int speedLimit = 150;
+	private int referenceSpeed = 150;
+	private double relativeMarginPercentage = 0.5;
 	public TrainSensorImpl(TrainController controller, TrainUser user) {
 		this.controller = controller;
 		this.user = user;
@@ -23,7 +24,21 @@ public class TrainSensorImpl implements TrainSensor {
 	@Override
 	public void overrideSpeedLimit(int speedLimit) {
 		this.speedLimit = speedLimit;
+		alarm(speedLimit);
 		controller.setSpeedLimit(speedLimit);
+
 	}
 
+	private void alarm(int speedLimit){
+		if (speedLimit > 500 || speedLimit < 0 || isRelativeMargin(speedLimit)) {
+			user.setAlarmState(true);
+		} else {
+			user.setAlarmState(false);
+		}
+
+	}
+
+	private boolean isRelativeMargin(int speedLimit) {
+		return relativeMarginPercentage * referenceSpeed> speedLimit;
+	}
 }
