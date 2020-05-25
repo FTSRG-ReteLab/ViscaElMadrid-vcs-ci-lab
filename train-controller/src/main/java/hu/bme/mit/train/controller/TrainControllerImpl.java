@@ -9,6 +9,9 @@ public class TrainControllerImpl implements TrainController {
 	private int speedLimit = 0;
 	private Thread thread;
 
+	/**
+	 * Periodic change implementation
+	 */
 	public TrainControllerImpl() {
 		thread = new Thread(() -> {
 			try {
