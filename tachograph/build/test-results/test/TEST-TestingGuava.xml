@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestingGuava" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-25T13:31:33" hostname="xubuntu" time="0.153">
+<testsuite name="TestingGuava" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-05-25T20:21:21" hostname="xubuntu" time="0.157">
   <properties/>
-  <testcase name="OverridingJoystickPosition_IncreasesReferenceSpeed" classname="TestingGuava" time="0.153"/>
+  <testcase name="OverridingJoystickPosition_IncreasesReferenceSpeed" classname="TestingGuava" time="0.157"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

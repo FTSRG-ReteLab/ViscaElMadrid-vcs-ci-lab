@@ -8,7 +8,7 @@ public class TestingGuava {
     @Before
     public void before() {
         MyTable table = new MyTable();
-        myTable= table.myTable;
+        myTable= table.table;
     }
 
     @Test
